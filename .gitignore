@@ -1,3 +1,6 @@
+# Creds file
+resource/test_data/credentials.json
+
 # Distribution / packaging
 .Python
 
@@ -13,3 +16,4 @@
 
 # Visual Studio Code
 .vscode/
+

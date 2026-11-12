@@ -1,0 +1,45 @@
+"""
+THIS DOCUMENT IS A GENERAL MANUAL FOR THIS AUTOMATION.
+Author : SHUBHAM KUMAR
+"""
+
+*** UPDATE FILE WITH LATEST CHANGES BEFORE COMMIT ***
+
+** BASE DIRECTORY must be "CSS_AUTOMATION".
+
+** CSS_AUTOMATION ::
+    - resource
+        - config :: Keep configuration related files here.
+            - context.py :: Contains Automation Basic configuration.
+                            Automation Path, ENV, user config & others are in this file.
+
+            - test_order.txt :: List of tests. MUST UPDATE on EVERY CHANGE.
+                                FIXED FORMAT for entry :: testfilename | navigation flow | author of test.
+                                E.g., test_block_asset_details.py | Metering -> Inventory -> Block Storage -> Asset Details | Shubham Kumar
+
+        - test_data :: Keep test data in this directory.
+            -   credentials.json :: Credentials JSON file. | DO NOT UPLOAD ON ANY REPO. | .gitignore added |
+                STORE IN LOCAL MACHINE ONLY. | MANDATORY FILE
+                JSON format :: {"user_role" : {"username": "", "password": ""}}
+
+    - src
+        - locators :: locators files.
+            - navigation_locators.py :: Locators for navigating across CSS.
+
+        - pages :: test related methods.
+            - base_page.py :: Common page actions.
+            - navigation_page.py :: Navigation related methods.
+
+        - utils :: utility files. 
+                   logger, config_reader & others are in this file.
+
+    - tests
+        - API :: API tests.
+        - DB :: DB tests.
+        - UI :: WEB UI tests.
+
+    - .env :: MANDATORY FILE
+        local environment file for Automation.
+        Keep ENV, ENV URLs.
+
+    - requirements.txt :: Python packages/libraries used in this framework.

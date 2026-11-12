@@ -3,6 +3,8 @@ resource/test_data/credentials.json
 
 # Distribution / packaging
 .Python
+.pytest_cache/
+*/*/__pycache__/
 
 # Coverage reports
 
